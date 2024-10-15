@@ -1,3 +1,7 @@
+mod condition;
+mod loop_test;
+
+
 fn main() {
     println!("Hello 🌍!");
     println!("Edit me!");
@@ -44,6 +48,18 @@ fn main() {
 
     let n = 20;
     println!("fb({n}) = {}", fib(n));
+
+
+    // condition 
+
+    condition::conditon_practice();
+    condition::conditon_as_expression();
+
+    // loop
+    loop_test::while_loop_test();
+    loop_test::for_loop_range_test();
+    loop_test::for_loop_in_test();
+    loop_test::loop_test();
 }
 
 
