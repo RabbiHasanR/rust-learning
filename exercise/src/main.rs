@@ -1,70 +1,86 @@
 mod condition;
 mod loop_test;
-
+mod labels;
 
 fn main() {
-    println!("Hello 🌍!");
-    println!("Edit me!");
+    // println!("Hello 🌍!");
+    // println!("Edit me!");
 
-    let mut x: i32 = 10;
-    println!("x: {x}");
+    // let mut x: i32 = 10;
+    // println!("x: {x}");
 
     // let x = 20;
-    x = 20;
-    println!("x: {x}");
+    // x = 20;
+    // println!("x: {x}");
 
-    let s1 = String::from("hello");
-    let s2 = s1;
-    println!("{}", s2);
+    // let s1 = String::from("hello");
+    // let s2 = s1;
+    // println!("{}", s2);
 
-    let x = 5;
-    let y = x;
-    println!("x: {}, y: {}", x, y);
+    // let x = 5;
+    // let y = x;
+    // println!("x: {}, y: {}", x, y);
 
     // immutable reference
-    let x = 5;
-    let y = &x;
-    println!("x: {}, y: {}", x, y);
+    // let x = 5;
+    // let y = &x;
+    // println!("x: {}, y: {}", x, y);
 
     // mutable reference
-    let mut x = 5;
-    let y = &mut x;
-    *y += 1;
-    println!("x: {}", x);
+    // let mut x = 5;
+    // let y = &mut x;
+    // *y += 1;
+    // println!("x: {}", x);
 
     // constant variables
-    const MAX_POINTS: u32 = 100_000;
-    println!("{}", MAX_POINTS);
+    // const MAX_POINTS: u32 = 100_000;
+    // println!("{}", MAX_POINTS);
 
     //arithmetic operation
-    println!("result: {}", interproduct(120, 100, 248));
+    // println!("result: {}", interproduct(120, 100, 248));
 
 
-    let a = 10;
-    let b = 20;
-    takes_u32(a);
-    takes_i8(b);
+    // let a = 10;
+    // let b = 20;
+    // takes_u32(a);
+    // takes_i8(b);
     // takes_u32(b); error
 
-    let n = 20;
-    println!("fb({n}) = {}", fib(n));
+    // let n = 20;
+    // println!("fb({n}) = {}", fib(n));
 
 
     // condition 
 
-    condition::conditon_practice();
-    condition::conditon_as_expression();
+    // condition::conditon_practice();
+    // condition::conditon_as_expression();
 
     // loop
-    loop_test::while_loop_test();
-    loop_test::for_loop_range_test();
-    loop_test::for_loop_in_test();
-    loop_test::loop_test();
+    // loop_test::while_loop_test();
+    // loop_test::for_loop_range_test();
+    // loop_test::for_loop_in_test();
+    // loop_test::loop_test();
 
     // break and continue
-    loop_test::loop_with_break_and_continue();
-    loop_test::while_loop_return();
-    loop_test::for_loop_return();
+    // loop_test::loop_with_break_and_continue();
+    // loop_test::while_loop_return();
+    // loop_test::for_loop_return();
+
+    // labels
+    labels::labels_example();
+    labels::labels_example_two();
+    labels::labels_example_three();
+    labels::labels_example_four();
+
+    labels::arbitray_block_example();
+    let x = labels::arbitray_block_example_find_value(-5);
+    let y = labels::arbitray_block_example_find_value(0);
+    let z = labels::arbitray_block_example_find_value(10);
+
+    println!("Value: {x}");
+    println!("Value: {y}");
+    println!("Value: {z}");
+    
 }
 
 
