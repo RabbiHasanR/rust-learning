@@ -1,6 +1,7 @@
 mod condition;
 mod loop_test;
 mod labels;
+mod blocks_scopes;
 
 fn main() {
     // println!("Hello 🌍!");
@@ -67,20 +68,33 @@ fn main() {
     // loop_test::for_loop_return();
 
     // labels
-    labels::labels_example();
-    labels::labels_example_two();
-    labels::labels_example_three();
-    labels::labels_example_four();
+    // labels::labels_example();
+    // labels::labels_example_two();
+    // labels::labels_example_three();
+    // labels::labels_example_four();
 
-    labels::arbitray_block_example();
-    let x = labels::arbitray_block_example_find_value(-5);
-    let y = labels::arbitray_block_example_find_value(0);
-    let z = labels::arbitray_block_example_find_value(10);
+    // labels::arbitray_block_example();
+    // let x = labels::arbitray_block_example_find_value(-5);
+    // let y = labels::arbitray_block_example_find_value(0);
+    // let z = labels::arbitray_block_example_find_value(10);
 
-    println!("Value: {x}");
-    println!("Value: {y}");
-    println!("Value: {z}");
-    
+    // println!("Value: {x}");
+    // println!("Value: {y}");
+    // println!("Value: {z}");
+
+    // block scopes
+    blocks_scopes::block_example();
+    let x = blocks_scopes::block_example_return();
+    println!("return x: {x}");
+
+    blocks_scopes::scope_example();
+    blocks_scopes::scope_example_two();
+
+    let y = 10;
+    blocks_scopes::function_scope(y);
+    blocks_scopes::ownership_borrowing_scope();
+    blocks_scopes::return_value_scope();
+
 }
 
 
