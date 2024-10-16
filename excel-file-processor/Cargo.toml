@@ -1,0 +1,15 @@
+[package]
+name = "excel-file-processor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+calamine = "0.20.0"
+csv = "1.1.6"
+sanitize-filename = "0.3.0"
+chrono = { version = "0.4", features = ["alloc"] }
+rayon = "1.5.3"
+walkdir = "2.3.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tempfile = "3.3.0"

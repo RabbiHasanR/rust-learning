@@ -1,2 +1,5 @@
 /hello-rust/target
 /exercise/target
+/excel-file-processor/target
+/excel-file-processor/output_csv_files
+/excel-file-processor/output_csv_files_old
