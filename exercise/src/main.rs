@@ -60,6 +60,11 @@ fn main() {
     loop_test::for_loop_range_test();
     loop_test::for_loop_in_test();
     loop_test::loop_test();
+
+    // break and continue
+    loop_test::loop_with_break_and_continue();
+    loop_test::while_loop_return();
+    loop_test::for_loop_return();
 }
 
 

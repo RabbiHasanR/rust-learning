@@ -37,3 +37,49 @@ pub fn loop_test() {
         }
     }
 }
+
+
+
+pub fn loop_with_break_and_continue() {
+    let mut i =0;
+    let result = loop {
+        i += 1;
+        if i > 5 {
+            break i;
+        }
+        if i % 2 == 0 {
+            continue;
+        }
+        println!("break and continue: {}",i);
+    };
+
+    println!("return value when breaK in loop: {}", result);
+}
+
+
+pub fn while_loop_return() {
+    let mut counter = 0;
+
+    let result = while counter < 10 {
+        counter += 1;
+        println!("while counter: {counter}");
+        if counter == 5 {
+            return;
+        }
+    };
+
+    println!("while loop return unit type: {:?}", result);
+
+}
+
+
+pub fn for_loop_return() {
+    let result = for i in 1..5 {
+        println!("for i: {i}");
+        if i == 3 {
+            return;
+        }
+    };
+
+    println!("for loop return unit type: {:?}", result);
+}
