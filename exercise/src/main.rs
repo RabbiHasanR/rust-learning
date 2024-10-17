@@ -4,7 +4,26 @@ mod functions;
 mod labels;
 mod loop_test;
 mod macros;
+mod collatz_sequence;
 
+use my_proc_macro::HelloMacro;
+// use my_proc_macro::route;
+use my_proc_macro::my_macro;
+
+// Define the HelloMacro trait
+pub trait HelloMacro {
+    fn hello();
+}
+
+#[derive(HelloMacro)]
+struct Pancakes;
+
+
+
+// #[route("/home")]
+// fn home() {
+//     // Function body
+// }
 fn main() {
     // println!("Hello 🌍!");
     // println!("Edit me!");
@@ -111,11 +130,24 @@ fn main() {
 
     // macros
 
-    macros::macros_example();
-    say_hello!();
-    print_sum!(5, 10);
-    let result = sum!(1, 2, 3, 4, 5);
-    println!("The sum is: {}", result);
+    // macros::macros_example();
+    // say_hello!();
+    // print_sum!(5, 10);
+    // let result = sum!(1, 2, 3, 4, 5);
+    // println!("The sum is: {}", result);
+
+    // Pancakes::hello();
+
+    // // home();
+    // my_macro!(Hello, Rust!);
+
+    let result = collatz_sequence::collatz_length(11);
+    let result2 = collatz_sequence::collatz_length(10);
+
+    println!("Length: {result}");
+    println!("Length2: {result2}");
+
+
 }
 
 // fn interproduct(a: i32, b: i32, c: i32) -> i32 {

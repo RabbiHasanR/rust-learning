@@ -3,13 +3,6 @@
 version = 3
 
 [[package]]
-name = "exercise"
-version = "0.1.0"
-dependencies = [
- "my_proc_macro",
-]
-
-[[package]]
 name = "my_proc_macro"
 version = "0.1.0"
 dependencies = [
