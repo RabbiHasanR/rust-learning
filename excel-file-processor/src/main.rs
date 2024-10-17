@@ -2,12 +2,14 @@ mod balance_calculation;
 mod convert_excel_to_csv;
 mod validation_check_parallal;
 mod validation_check_synchornize;
+mod convert_csv_to_excel;
 
 fn main() {
     // convert_excel_to_csv::convert_excel_to_csv();
     // validation_check_parallal::validation_check();
     // validation_check_synchornize::validation_cehck();
-    balance_calculation::balance_calculation();
+    // balance_calculation::balance_calculation();
+    convert_csv_to_excel::convert_csv_to_excel();
 }
 
 // validation chekc parallal 120.79 s 2 minutes
