@@ -112,6 +112,10 @@ fn main() {
     // macros
 
     macros::macros_example();
+    say_hello!();
+    print_sum!(5, 10);
+    let result = sum!(1, 2, 3, 4, 5);
+    println!("The sum is: {}", result);
 }
 
 // fn interproduct(a: i32, b: i32, c: i32) -> i32 {

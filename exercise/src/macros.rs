@@ -19,3 +19,34 @@ pub fn macros_example() {
 
 
 // declarative macros (macro_rules)
+
+#[macro_export]
+macro_rules! say_hello {
+    () => {
+        println!("Hello, World!");
+    };
+}
+
+// macro with arguments
+
+#[macro_export]
+macro_rules! print_sum {
+    ($x:expr, $y:expr) => {
+        println!("The sum of {} and {} is {}", $x, $y, $x + $y);
+    };
+}
+
+
+// repeating patterns in macros
+#[macro_export]
+macro_rules! sum {
+    ($($num:expr),*) => {
+        {
+            let mut sum = 0;
+            $(
+                sum += $num;
+            )*
+            sum
+        }
+    };
+}
