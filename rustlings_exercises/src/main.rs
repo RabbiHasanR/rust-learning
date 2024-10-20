@@ -13,7 +13,13 @@
 // include!("../exercises/function5.rs");
 // include!("../exercises/if1.rs");
 // include!("../exercises/if2.rs");
-include!("../exercises/if3.rs");
+// include!("../exercises/if3.rs");
+// include!("../exercises/primitive_types1.rs");
+// include!("../exercises/primitive_types2.rs");
+// include!("../exercises/primitive_types3.rs");
+// include!("../exercises/primitive_types4.rs");
+// include!("../exercises/primitive_types5.rs");
+include!("../exercises/primitive_types6.rs");
 
 fn main() {
     // intro_one();
@@ -31,5 +37,11 @@ fn main() {
     // function_five();
     // if_one();
     // if_two();
-    if_three();
+    // if_three();
+    // primitive_types_one();
+    // primitive_types_two();
+    // primitive_types_three();
+    // primitive_types_four();
+    // primitive_types_five();
+    primitive_types_six();
 }

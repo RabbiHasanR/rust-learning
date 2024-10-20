@@ -4,7 +4,11 @@ mod functions;
 mod labels;
 mod loop_test;
 mod macros;
+mod array;
+mod tuple;
+mod nested_arrays;
 mod collatz_sequence;
+mod references;
 
 use my_proc_macro::HelloMacro;
 // use my_proc_macro::route;
@@ -141,11 +145,34 @@ fn main() {
     // // home();
     // my_macro!(Hello, Rust!);
 
-    let result = collatz_sequence::collatz_length(11);
-    let result2 = collatz_sequence::collatz_length(10);
+    // let result = collatz_sequence::collatz_length(11);
+    // let result2 = collatz_sequence::collatz_length(10);
 
-    println!("Length: {result}");
-    println!("Length2: {result2}");
+    // println!("Length: {result}");
+    // println!("Length2: {result2}");
+
+    // array::array_example();
+    // array::array_example_two();
+    // array::array_example_three();
+    // array::array_example_four();
+    // array::array_example_five();
+    // array::array_example_six();
+    // array::array_example_seven();
+    // array::array_example_eight();
+
+    // tuple::tuple_example();
+    // tuple::tuple_example_two();
+    // tuple::tuple_example_three();
+    // tuple::tuple_example_four();
+    // tuple::tuple_example_five();
+    // tuple::tuple_example_six();
+
+    // nested_arrays::nested_arrays_exercise();
+
+    references::shared_reference();
+    references::dangling_reference();
+    references::reference_example();
+    references::exclusive_reference();
 
 
 }
