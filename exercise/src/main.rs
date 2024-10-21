@@ -9,6 +9,8 @@ mod tuple;
 mod nested_arrays;
 mod collatz_sequence;
 mod references;
+mod geometry;
+mod named_structs;
 
 use my_proc_macro::HelloMacro;
 // use my_proc_macro::route;
@@ -169,10 +171,21 @@ fn main() {
 
     // nested_arrays::nested_arrays_exercise();
 
-    references::shared_reference();
-    references::dangling_reference();
-    references::reference_example();
-    references::exclusive_reference();
+    // references::shared_reference();
+    // references::dangling_reference();
+    // references::reference_example();
+    // references::exclusive_reference();
+
+    // references::slices_example();
+    // references::slices_example_two();
+
+    // references::string_example();
+
+    // references::string_slice_example();
+
+    // geometry::geometry();
+
+    named_structs::named_struct_example();
 
 
 }

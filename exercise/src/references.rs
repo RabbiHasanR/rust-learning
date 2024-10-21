@@ -63,3 +63,65 @@ pub fn exclusive_reference() {
     // println!("p: {p}");
     println!("q: {q}");
 }
+
+// slices
+// immutable borrowing slice example
+pub fn slices_example() {
+    let a: [i32; 6] = [10,20,30,40,50,60];
+
+    println!("a: {a:?}");
+    let s = &a[2..4];
+    // let x = a[2..4];
+    println!("s: {s:?}");
+}
+
+
+// mutable borrowing slice example
+pub fn slices_example_two() {
+    let mut a = [1,2,3,4,5,6,7,8,9,10];
+    println!("a: {a:?}");
+
+    let mut x = &mut a[3..8];
+    println!("x: {x:?}");
+    println!("x slice first item: {}", x[0]);
+    x[0] = 10;
+    println!("x slice first item: {}", x[0]);
+    println!("a: {a:?}");
+}
+
+// strings
+
+pub fn string_example() {
+    let s1 = "world";
+    println!("s1:{s1}");
+
+    let mut s2 = String::from("Hello ");
+    println!("s2: {s2}");
+    s2.push_str(s1);
+    println!("s2: {s2}");
+
+    let s3 = &s2[s2.len()- s1.len()..];
+    println!("s3: {s3}");
+
+    println!("{:?}", b"abc");
+    println!("{:?}", &[97, 98, 99]);
+
+    println!(r#"<a href="link.html">link</a>"#);
+    println!("<a href=\"link.html\">link</a>");
+}
+
+
+// string slice using &str
+
+pub fn string_slice_example() {
+    let greeting: &str = "Hello, world";
+    println!("{}", greeting);
+
+    let part = &greeting[0..5];
+    println!("Sliced: {}", part);
+
+    let mut x = "fuck";
+    println!("{x}");
+    x = "hello";
+    println!("{x}");
+}
