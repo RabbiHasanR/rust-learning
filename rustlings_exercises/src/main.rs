@@ -21,7 +21,8 @@
 // include!("../exercises/primitive_types5.rs");
 // include!("../exercises/primitive_types6.rs");
 // include!("../exercises/structs1.rs");
-include!("../exercises/structs2.rs");
+// include!("../exercises/structs2.rs");
+include!("../exercises/structs3.rs");
 
 fn main() {
     // intro_one();
