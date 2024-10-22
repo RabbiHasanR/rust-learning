@@ -11,6 +11,8 @@ mod collatz_sequence;
 mod references;
 mod geometry;
 mod named_structs;
+mod tuple_structs;
+mod enums;
 
 use my_proc_macro::HelloMacro;
 // use my_proc_macro::route;
@@ -185,8 +187,19 @@ fn main() {
 
     // geometry::geometry();
 
-    named_structs::named_struct_example();
+    // named_structs::named_struct_example();
 
+    // tuple_structs::tuple_structs_example();
+
+    enums::enums_example();
+    enums::enums_example_two();
+    enums::enums_example_three();
+    enums::enums_example_four();
+    enums::enums_example_five();
+    enums::enums_example_six();
+    enums::enums_example_seven();
+    enums::enums_example_eight();
+    enums::enums_example_nine();
 
 }
 
