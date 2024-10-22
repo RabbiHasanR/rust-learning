@@ -22,7 +22,10 @@
 // include!("../exercises/primitive_types6.rs");
 // include!("../exercises/structs1.rs");
 // include!("../exercises/structs2.rs");
-include!("../exercises/structs3.rs");
+// include!("../exercises/structs3.rs");
+// include!("../exercises/enums1.rs");
+// include!("../exercises/enums2.rs");
+include!("../exercises/enums3.rs");
 
 fn main() {
     // intro_one();
@@ -47,4 +50,8 @@ fn main() {
     // primitive_types_four();
     // primitive_types_five();
     // primitive_types_six();
+    // enums_one();
+    // enums_two();
+    
+    
 }
