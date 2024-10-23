@@ -195,4 +195,7 @@ pub fn enums_example_nine() {
         Ok(value) => println!("Result: {}", value),
         Err(e) => println!("Error: {}", e),
     }
-}
+}    // static_example::static_example();
+    // static_example::static_example_two();
+    // static_example::static_example_three();
+    // static_example::static_example_four();

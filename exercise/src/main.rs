@@ -13,6 +13,9 @@ mod geometry;
 mod named_structs;
 mod tuple_structs;
 mod enums;
+mod const_example;
+mod static_example;
+mod type_alias;
 
 use my_proc_macro::HelloMacro;
 // use my_proc_macro::route;
@@ -85,7 +88,7 @@ fn main() {
 
     // loop
     // loop_test::while_loop_test();
-    // loop_test::for_loop_range_test();
+    // loop_test::for_loop_range_test();admin_view
     // loop_test::for_loop_in_test();
     // loop_test::loop_test();
 
@@ -191,16 +194,28 @@ fn main() {
 
     // tuple_structs::tuple_structs_example();
 
-    enums::enums_example();
-    enums::enums_example_two();
-    enums::enums_example_three();
-    enums::enums_example_four();
-    enums::enums_example_five();
-    enums::enums_example_six();
-    enums::enums_example_seven();
-    enums::enums_example_eight();
-    enums::enums_example_nine();
+    // enums::enums_example();
+    // enums::enums_example_two();
+    // enums::enums_example_three();
+    // enums::enums_example_four();
+    // enums::enums_example_five();
+    // enums::enums_example_six();
+    // enums::enums_example_seven();
+    // enums::enums_example_eight();
+    // enums::enums_example_nine();
 
+    // const_example::const_example();
+    // const_example::const_example_two();
+    // const_example::const_example_three();
+
+    // static_example::static_example();
+    // static_example::static_example_two();
+    // static_example::static_example_three();
+    // static_example::static_example_four();
+
+    type_alias::type_alias_example();
+    type_alias::type_alias_example_two();
+    type_alias::type_alias_example_three();
 }
 
 // fn interproduct(a: i32, b: i32, c: i32) -> i32 {
