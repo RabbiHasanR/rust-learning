@@ -16,6 +16,8 @@ mod enums;
 mod const_example;
 mod static_example;
 mod type_alias;
+mod elevator_events;
+mod pattern_matching;
 
 use my_proc_macro::HelloMacro;
 // use my_proc_macro::route;
@@ -213,9 +215,17 @@ fn main() {
     // static_example::static_example_three();
     // static_example::static_example_four();
 
-    type_alias::type_alias_example();
-    type_alias::type_alias_example_two();
-    type_alias::type_alias_example_three();
+    // type_alias::type_alias_example();
+    // type_alias::type_alias_example_two();
+    // type_alias::type_alias_example_three();
+    // type_alias::type_alias_example_four();
+    // type_alias::type_alias_example_five();
+
+    // elevator_events::elevator_event();
+
+    pattern_matching::pattern_matching_example();
+    pattern_matching::pattern_matching_example_two();
+    pattern_matching::pattern_matching_example_three();
 }
 
 // fn interproduct(a: i32, b: i32, c: i32) -> i32 {
