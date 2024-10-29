@@ -1,6 +1,7 @@
 use core::num;
+use std::fmt::format;
 
-use crate::tuple;
+use crate::{functions::return_function_example, tuple};
 
 pub fn pattern_matching_example() {
     let input = 'x';
@@ -176,4 +177,118 @@ pub fn pattern_matching_example_fourteen() {
     let (x,y,z) = (10,20,30);
 
     println!("x: {}, y: {}, z: {}", x, y, z);
+}
+
+
+
+
+// patterns matching with structs
+
+struct Foo {
+    x: (u32, u32),
+    y: u32,
+}
+
+#[rustfmt::skip]
+pub fn pattern_matching_example_fiftten() {
+    let foo = Foo {x: (10,20), y: 3};
+
+    match foo {
+        Foo {x:(a,b), y} => println!("x.0={a}, b={b}, y={y}"),
+        Foo {y:e, x: i} => println!("y={e}, x={i:?}"),
+        Foo {y, ..} => println!("y={y}, other fields were ignored"),
+    }
+}
+
+
+// patterns matching with structs
+
+enum ResultTest {
+    Ok(i32),
+    Err(String),
+    Unknown
+}
+
+
+
+fn divide_in_two(n: i32) -> ResultTest {
+    if n % 2 == 0 {
+        ResultTest::Ok(n/2)
+    } else {
+        ResultTest::Err(format!("cannot divide {n} into two equal parts"))
+    }
+}
+
+
+pub fn pattern_matching_example_sixten() {
+    let n = 100;
+    match divide_in_two(n) {
+        ResultTest::Ok(half) => println!("{n} divided in two is {half}"),
+        ResultTest::Err(msg) => println!("sorry, an error happened: {msg}"),
+        ResultTest::Unknown => println!("unknown error")
+    }
+}
+
+
+// let control flow
+
+use std::time::Duration;
+
+fn sleep_for(secs: f32) {
+    if let Ok(duration) = Duration::try_from_secs_f32(secs) {
+        std::thread::sleep(duration);
+        println!("slept for {duration:?}");
+    } else {
+         println!("sleep error");
+    }
+}
+
+
+pub fn pattern_matching_example_seventen() {
+    sleep_for(-10.0);
+    sleep_for(0.8);
+}
+
+
+
+fn hex_or_die_trying(maybe_string: Option<String>) -> Result<u32, String> {
+    if let Some(s) = maybe_string {
+        if let Some(first_byte_char) = s.chars().next() {
+            if let Some(digit) = first_byte_char.to_digit(16) {
+                Ok(digit)
+            } else {
+                return Err(String::from("not a hex digit"));
+            }
+        } else {
+            return Err(String::from("got empty string"));
+        }
+    } else {
+        return Err(String::from("got None"));
+    }
+}
+
+fn hex_or_die_trying_rewrite_version(maybe_string: Option<String>) -> Result<u32, String>{
+    let Some(s) = maybe_string else {
+        return Err(String::from("got None"));
+    };
+    let Some(first_byte_char) = s.chars().next() else {
+        return Err(String::from("got empty string"));
+    };
+    let Some(digit) = first_byte_char.to_digit(16) else {
+        return Err(String::from("not a hax digit"));
+    };
+    return Ok(digit)
+}
+
+pub fn pattern_matching_example_eighteen() {
+    // println!("result: {:?}", hex_or_die_trying(Some(String::from("123"))));
+    println!("result: {:?}", hex_or_die_trying_rewrite_version(Some(String::from("123"))));
+
+}
+
+pub fn pattern_matching_example_nineteen() {
+    let mut name = String::from("Comprehensive Rust 🦀");
+    while let Some(c) = name.pop(){
+        println!("character: {c}");
+    }
 }

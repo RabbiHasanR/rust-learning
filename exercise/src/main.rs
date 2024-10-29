@@ -18,6 +18,7 @@ mod static_example;
 mod type_alias;
 mod elevator_events;
 mod pattern_matching;
+mod expression_evaluation;
 
 use my_proc_macro::HelloMacro;
 // use my_proc_macro::route;
@@ -223,20 +224,27 @@ fn main() {
 
     // elevator_events::elevator_event();
 
-    pattern_matching::pattern_matching_example();
-    pattern_matching::pattern_matching_example_two();
-    pattern_matching::pattern_matching_example_three();
-    pattern_matching::pattern_matching_example_four();
-    pattern_matching::pattern_matching_example_five();
-    pattern_matching::pattern_matching_example_six();
-    pattern_matching::pattern_matching_example_seven();
-    pattern_matching::pattern_matching_example_eight();
-    pattern_matching::pattern_matching_example_nine();
-    pattern_matching::pattern_matching_example_ten();
-    pattern_matching::pattern_matching_example_eleven();
-    pattern_matching::pattern_matching_example_twelve();
-    pattern_matching::pattern_matching_example_thirteen();
-    pattern_matching::pattern_matching_example_fourteen();
+    // pattern_matching::pattern_matching_example();
+    // pattern_matching::pattern_matching_example_two();
+    // pattern_matching::pattern_matching_example_three();
+    // pattern_matching::pattern_matching_example_four();
+    // pattern_matching::pattern_matching_example_five();
+    // pattern_matching::pattern_matching_example_six();
+    // pattern_matching::pattern_matching_example_seven();
+    // pattern_matching::pattern_matching_example_eight();
+    // pattern_matching::pattern_matching_example_nine();
+    // pattern_matching::pattern_matching_example_ten();
+    // pattern_matching::pattern_matching_example_eleven();
+    // pattern_matching::pattern_matching_example_twelve();
+    // pattern_matching::pattern_matching_example_thirteen();
+    // pattern_matching::pattern_matching_example_fourteen();
+    // pattern_matching::pattern_matching_example_fiftten();
+    // pattern_matching::pattern_matching_example_sixten();
+    // pattern_matching::pattern_matching_example_seventen();
+    // pattern_matching::pattern_matching_example_eighteen();
+    // pattern_matching::pattern_matching_example_nineteen();
+
+    expression_evaluation::expression_evaluation();
 }
 
 // fn interproduct(a: i32, b: i32, c: i32) -> i32 {
