@@ -19,6 +19,7 @@ mod type_alias;
 mod elevator_events;
 mod pattern_matching;
 mod expression_evaluation;
+mod methods;
 
 use my_proc_macro::HelloMacro;
 // use my_proc_macro::route;
@@ -244,7 +245,14 @@ fn main() {
     // pattern_matching::pattern_matching_example_eighteen();
     // pattern_matching::pattern_matching_example_nineteen();
 
-    expression_evaluation::expression_evaluation();
+    // expression_evaluation::expression_evaluation();
+
+    methods::method_example();
+    methods::method_example_two();
+    methods::method_example_three();
+    methods::method_example_four();
+    methods::method_example_five();
+    methods::method_example_six();
 }
 
 // fn interproduct(a: i32, b: i32, c: i32) -> i32 {
