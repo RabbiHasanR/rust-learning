@@ -21,6 +21,8 @@ mod pattern_matching;
 mod expression_evaluation;
 mod methods;
 mod _traits;
+mod supertraits;
+mod associated_types_traits;
 
 use my_proc_macro::HelloMacro;
 // use my_proc_macro::route;
@@ -255,7 +257,16 @@ fn main() {
     // methods::method_example_five();
     // methods::method_example_six();
 
-    _traits::trait_example();
+    // _traits::trait_example();
+
+    // supertraits::supertraits_example();
+    // supertraits::supertraits_example_two();
+    // supertraits::supertraits_example_three();
+    // supertraits::supertraits_example_four();
+
+    associated_types_traits::trait_example();
+    associated_types_traits::trait_example_two();
+    associated_types_traits::trait_example_three();
 }
 
 // fn interproduct(a: i32, b: i32, c: i32) -> i32 {
