@@ -29,7 +29,12 @@
 // include!("../exercises/strings1.rs");
 // include!("../exercises/strings2.rs");
 // include!("../exercises/strings3.rs");
-include!("../exercises/strings4.rs");
+// include!("../exercises/strings4.rs");
+// include!("../exercises/traits1.rs");
+// include!("../exercises/traits2.rs");
+// include!("../exercises/traits3.rs");
+// include!("../exercises/traits4.rs");
+include!("../exercises/traits5.rs");
 
 fn main() {
     // intro_one();
@@ -59,7 +64,8 @@ fn main() {
 
     // strings_one();
     // strings_two();
-    strings_four();
+    // strings_four();
+    // test_traits_one();
     
     
 }
