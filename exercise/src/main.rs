@@ -23,6 +23,8 @@ mod methods;
 mod _traits;
 mod supertraits;
 mod associated_types_traits;
+mod _derive;
+mod logger_trait;
 
 use my_proc_macro::HelloMacro;
 // use my_proc_macro::route;
@@ -264,9 +266,14 @@ fn main() {
     // supertraits::supertraits_example_three();
     // supertraits::supertraits_example_four();
 
-    associated_types_traits::trait_example();
-    associated_types_traits::trait_example_two();
-    associated_types_traits::trait_example_three();
+    // associated_types_traits::trait_example();
+    // associated_types_traits::trait_example_two();
+    // associated_types_traits::trait_example_three();
+
+    // _derive::derive_example();
+    // _derive::derive_example_two();
+
+    logger_trait::logger_trait_example();
 }
 
 // fn interproduct(a: i32, b: i32, c: i32) -> i32 {
