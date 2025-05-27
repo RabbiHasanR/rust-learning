@@ -5,6 +5,8 @@ mod loops;
 mod break_continue;
 mod labels;
 mod functions;
+mod macros;
+mod collatze;
 
 
 fn main() {
@@ -29,6 +31,9 @@ fn main() {
     labels::labels_break();
 
     functions::functions();
-    println!("Functions executed successfully.");
+    macros::macros();
+
+    let coll_result = collatze::collatz_length(11);
+    println!("Collatz length for 11 is: {}", coll_result);
     println!("End of the program.");
 }
