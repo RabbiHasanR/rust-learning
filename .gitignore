@@ -6,6 +6,8 @@
 /excel-file-processor/output_excel_files
 /hello_type_values/target
 /day_one_control_flow/target
+/day1_tuples_arrays/target
+/day1_references/target
 
 
 /my_proc_macro/target
